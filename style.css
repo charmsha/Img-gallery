@@ -1,0 +1,59 @@
+*{
+box-sizing:border-box;
+}
+
+div.gallary{
+    border: 3px solid black;
+}
+
+div.gallary:hover{
+    border: 6px solid yellow;
+}
+
+div.gallary img{
+    width: 100%;
+    height: auto;
+}
+
+div.desc{
+    padding: 10px;
+    text-align: center;
+}
+
+.responsive{
+
+    padding:0 6px;
+    float: left;
+    width: 25%;
+}
+
+@media only screen and (max-width:600px){
+    .responsive{
+        width: 50%;
+        margin: 6px auto;
+    }
+
+@media only screen and(max-width: 400px){
+
+    .responsive{
+        width: 100%;
+    }
+}
+   
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ .tt {
+    top: 300px;;
+    display: block;
+    counter-reset: section;
+  }
+  
+ h2::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+  }
+
